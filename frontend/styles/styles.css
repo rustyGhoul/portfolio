@@ -1321,3 +1321,52 @@ body {
         padding: var(--space-24) var(--space-16);
     }
 }
+
+/* ========================================== 
+   HEX-TECH & CYBER-ALCHEMIST OVERRIDES 
+   ========================================== */
+
+:root {
+  /* Infusing your existing palette with Neon Alchemy */
+  --color-hex-glow: #00f3ff;
+  --color-hex-potion: #ff00ff;
+  --color-hex-toxic: #39ff14;
+}
+
+/* 1. The Glitchy "Illustrated" Title */
+.hero-content h1, .logo {
+  font-family: var(--font-family-mono); /* Using your Berkeley Mono */
+  text-transform: uppercase;
+  color: var(--color-hex-glow);
+  text-shadow: 2px 2px var(--color-hex-potion), -2px -1px var(--color-hex-toxic);
+  position: relative;
+  letter-spacing: 0.1em;
+}
+
+/* 2. The "Scanline" Workshop Filter */
+/* Adds that CRT/Illustrated texture to the whole site */
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
+              linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 3px, 2px 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 3. The "Potion-Glass" Cards */
+/* Updating your .project-card to look like alchemical glass */
+.project-card {
+  background: rgba(var(--color-slate-900-rgb), 0.7) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-hex-glow);
+  box-shadow: inset 0 0 15px rgba(0, 243, 255, 0.2);
+}
+
+.project-card:hover {
+  border-color: var(--color-hex-potion);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+}
