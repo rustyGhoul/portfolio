@@ -32,26 +32,40 @@
     </header>
 
     <div class="divider-container" style="text-align: center; padding: 40px 0;">
-        <svg width="100" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M100 5L115 30L100 55L85 30L100 5H100Z" stroke="#00f3ff" stroke-width="2" stroke-linejoin="round" />
             <path d="M110 30H190M90 30H10" stroke="#00f3ff" stroke-width="1" stroke-dasharray="4 4" />
             <circle cx="100" cy="30" r="12" stroke="#ff00ff" stroke-width="1" stroke-dasharray="2 2" />
         </svg>
     </div>
 
-    <section id="projects" class="container">
-        <h2 style="text-align: center; margin-bottom: 40px;">Active Experiments</h2>
-        <div class="projects-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            <div class="project-card">
-                <h3>The Etsy Scout</h3>
-                <p>An autonomous market-intelligence agent designed to find "Goldilocks Zone" keywords in
-                    Sci-Fi/Cyberpunk niches.</p>
-            </div>
-            <div class="project-card">
-                <h3>Guavy Sentinel</h3>
-                <p>A real-time sentiment watcher monitoring crowd psychology across the Sprawl for market volatility.
-                </p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Active Experiments</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="tech-stack">Python • Etsy API • Data Analysis</span>
+                        <h3>The Etsy Scout</h3>
+                    </div>
+                    <p class="project-description">An autonomous market-intelligence agent designed to find "Goldilocks
+                        Zone" keywords in the Sci-Fi/Cyberpunk niches.</p>
+                    <div class="project-links">
+                        <a href="#" class="link">View Experiment</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="tech-stack">Python • Crypto API • AI Agents</span>
+                        <h3>Guavy Sentinel</h3>
+                    </div>
+                    <p class="project-description">A real-time sentiment watcher that monitors "crowd psychology" across
+                        the Sprawl to identify market volatility.</p>
+                    <div class="project-links">
+                        <a href="#" class="link">View Log</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
