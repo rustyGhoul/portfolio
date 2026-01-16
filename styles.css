@@ -1343,6 +1343,14 @@ body {
   letter-spacing: 0.1em;
 }
 
+.hero-content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: var(--space-32);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+}
+
 /* 2. The "Scanline" Workshop Filter */
 /* Adds that CRT/Illustrated texture to the whole site */
 body::before {
