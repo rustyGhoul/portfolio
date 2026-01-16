@@ -11,7 +11,7 @@ def get_market_sentiment(asset):
     headers = {"Authorization": f"Bearer {API_KEY}"}
     try:
         # Targeting the sentiment endpoint
-        response = requests.get(f"{BASES_URL}/sentiment/{asset}", headers=headers)
+        response = requests.get(f"{BASE_URL}/sentiment/{asset}", headers=headers)
         response.raise_for_status()
         data = response.json()
         
